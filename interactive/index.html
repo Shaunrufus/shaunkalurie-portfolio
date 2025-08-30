@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaun Rufus Kalurie - Interactive ML Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">SK</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="name-primary">Shaun Rufus</span>
+                        <span class="name-secondary">Kalurie</span>
+                    </h1>
+                    <p class="hero-subtitle">Machine Learning Engineer & Data Scientist</p>
+                    <p class="hero-description">
+                        Crafting intelligent solutions with <span class="highlight">90% accuracy</span> in flood prediction 
+                        and empowering <span class="highlight">250+ enterprises</span> through cutting-edge ML algorithms.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="90">0</span>
+                            <span class="stat-label">% Accuracy</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="250">0</span>
+                            <span class="stat-label">+ Enterprises</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="95">0</span>
+                            <span class="stat-label">% Improvement</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            Explore Projects
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="btn-close"></span>
+                                <span class="btn-minimize"></span>
+                                <span class="btn-maximize"></span>
+                            </div>
+                            <div class="terminal-title">ml_engineer.py</div>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="code-line">
+                                <span class="comment"># Machine Learning Engineer</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="keyword">import</span> <span class="module">tensorflow</span> <span class="keyword">as</span> tf
+                            </div>
+                            <div class="code-line">
+                                <span class="keyword">from</span> <span class="module">sklearn</span> <span class="keyword">import</span> ensemble
+                            </div>
+                            <div class="code-line">
+                                <span class="keyword">import</span> <span class="module">pandas</span> <span class="keyword">as</span> pd
+                            </div>
+                            <div class="code-line">
+                                <span class="comment"># Building the future with AI</span>
+                            </div>
+                            <div class="code-line">
+                                accuracy = <span class="number">0.90</span>
+                            </div>
+                            <div class="code-line">
+                                enterprises_helped = <span class="number">250</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="function">print</span>(<span class="string">"Ready to innovate!"</span>)
+                            </div>
+                            <div class="cursor"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <h3>Transforming Data into Intelligence</h3>
+                        <p>
+                            I'm a passionate Machine Learning Engineer who believes in the power of data to solve real-world problems. 
+                            With expertise in deep learning, LLMs, and cloud technologies, I've successfully delivered high-impact 
+                            solutions that drive business transformation.
+                        </p>
+                    </div>
+                    <div class="skills-preview">
+                        <div class="skill-cloud">
+                            <span class="skill-tag featured">Python</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag featured">Machine Learning</span>
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag featured">Deep Learning</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag featured">LLMs</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">Neural Networks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-achievements">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>AI Innovation</h4>
+                        <p>Developing cutting-edge ML models with exceptional accuracy rates</p>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Business Impact</h4>
+                        <p>Delivered measurable results for 250+ enterprises worldwide</p>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Continuous Learning</h4>
+                        <p>Multiple certifications in AI, ML, and cloud technologies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Programming Languages
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C/C++</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">R</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-robot"></i>
+                        ML/AI Technologies
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Machine Learning</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Deep Learning</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Generative AI</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">LLM Fine-tuning</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-cogs"></i>
+                        Frameworks & Tools
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">TensorFlow</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PyTorch</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Scikit-learn</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Pandas/NumPy</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-cloud"></i>
+                        Cloud & DevOps
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">AWS</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Docker</span>
+                                <span class="skill-level">Beginner</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git/GitHub</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MLOps</span>
+                                <span class="skill-level">Beginner</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-year="2024">
+                    <div class="timeline-content">
+                        <div class="company-logo">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="job-title">Machine Learning Engineer Intern</h3>
+                        <h4 class="company-name">Feynn Labs</h4>
+                        <span class="job-duration">2024 | Remote</span>
+                        <div class="job-description">
+                            <ul class="achievements">
+                                <li>🚀 Developed ML algorithms that streamlined operations for <strong>250+ SMEs</strong></li>
+                                <li>⚡ Achieved <strong>40% reduction</strong> in processing time across business functions</li>
+                                <li>🎯 Led development of 3 new features increasing customer engagement by <strong>60%</strong></li>
+                                <li>🤝 Collaborated with cross-functional teams on innovative product solutions</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Data Analysis</span>
+                            <span class="tech-tag">Algorithm Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-year="2024">
+                    <div class="timeline-content">
+                        <div class="company-logo">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3 class="job-title">Data Science Intern</h3>
+                        <h4 class="company-name">Web Neural Infotech</h4>
+                        <span class="job-duration">2024 | Hyderabad</span>
+                        <div class="job-description">
+                            <ul class="achievements">
+                                <li>📊 Built data visualization dashboards improving decision-making by <strong>25%</strong></li>
+                                <li>🔧 Implemented prompt engineering techniques enhancing accuracy by <strong>15%</strong></li>
+                                <li>⏱️ Reduced data retrieval times by <strong>50%</strong> through optimization</li>
+                                <li>🌐 Delivered real-time analytics solutions for multiple sectors</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Data Visualization</span>
+                            <span class="tech-tag">Analytics</span>
+                            <span class="tech-tag">Optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <div class="project-badge">Featured</div>
+                    </div>
+                    <h3 class="project-title">Flood Forecasting System</h3>
+                    <p class="project-description">
+                        Advanced machine learning system for flood prediction using ensemble algorithms 
+                        and historical climate data with exceptional accuracy rates.
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">90%</span>
+                            <span class="metric-label">Accuracy</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">95%</span>
+                            <span class="metric-label">Improvement</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">20%</span>
+                            <span class="metric-label">Error Reduction</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">GridSearchCV</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn btn-outline">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </button>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Air Quality Forecasting</h3>
+                    <p class="project-description">
+                        Deep learning model for air quality prediction using transfer learning 
+                        and real-time environmental data processing.
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">95%</span>
+                            <span class="metric-label">Accuracy</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">100</span>
+                            <span class="metric-label">F1-Score</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">85-100%</span>
+                            <span class="metric-label">Precision</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Deep Learning</span>
+                        <span class="tech-tag">Transfer Learning</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn btn-outline">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </button>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Data Science Pipeline</h3>
+                    <p class="project-description">
+                        Comprehensive end-to-end data science project with automated web scraping, 
+                        processing, and interactive visualization dashboards.
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">100%</span>
+                            <span class="metric-label">Automation</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">Real-time</span>
+                            <span class="metric-label">Processing</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">Interactive</span>
+                            <span class="metric-label">Dashboards</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Beautiful Soup</span>
+                        <span class="tech-tag">Matplotlib</span>
+                        <span class="tech-tag">Jupyter</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn btn-outline">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </button>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="education-content">
+                <div class="education-main">
+                    <div class="degree-card">
+                        <div class="degree-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="degree-info">
+                            <h3 class="degree-title">Bachelor of Technology</h3>
+                            <h4 class="degree-field">Computer Science and Engineering</h4>
+                            <p class="institution">St. Martin's Engineering College</p>
+                            <p class="location">Hyderabad, Telangana</p>
+                            <span class="graduation-year">2024</span>
+                        </div>
+                        <div class="degree-achievements">
+                            <ul>
+                                <li>🎯 Specialized in Machine Learning and AI applications</li>
+                                <li>🏆 Completed multiple industry-relevant projects</li>
+                                <li>💡 Strong foundation in algorithms and data structures</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certifications">
+                    <h3 class="certifications-title">Professional Certifications</h3>
+                    <div class="certifications-grid">
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h4>Python for Data Science and AI</h4>
+                            <p>IBM Certified</p>
+                            <span class="cert-year">2024</span>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fab fa-google"></i>
+                            </div>
+                            <h4>Foundations of Data Science</h4>
+                            <p>Google Certified</p>
+                            <span class="cert-year">2024</span>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>Generative AI using LLMs</h4>
+                            <p>DeepLearning.AI</p>
+                            <span class="cert-year">2024</span>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h4>Fine Tuning Large Language Models</h4>
+                            <p>DeepLearning.AI</p>
+                            <span class="cert-year">2024</span>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fab fa-aws"></i>
+                            </div>
+                            <h4>Cloud Technical Essentials</h4>
+                            <p>AWS Certified</p>
+                            <span class="cert-year">2024</span>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h4>Business Analysis</h4>
+                            <p>Udemy Certified</p>
+                            <span class="cert-year">2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Ready to collaborate?</h3>
+                    <p>
+                        I'm always excited to discuss new opportunities in machine learning and data science. 
+                        Let's build something amazing together!
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:shaunrufus1412@gmail.com">shaunrufus1412@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+918008847365">+91 8008847365</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Location</span>
+                                <span>Hyderabad, Telangana, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/shaun-rufus/" target="_blank" class="social-link linkedin">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/shaunrufus" target="_blank" class="social-link github">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="mailto:shaunrufus1412@gmail.com" class="social-link email">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <label>Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <label>Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                            <label>Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <label>Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Shaun Rufus Kalurie. Crafted with passion for innovation.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
