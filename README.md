@@ -214,7 +214,7 @@ All versions are fully responsive:
 ## 📞 Contact Information
 
 - **Email**: shaunrufus1412@gmail.com
-- **Phone**: +91 8008847365
+- **Phone**: +91 8******365
 - **LinkedIn**: [linkedin.com/in/shaun-rufus](https://www.linkedin.com/in/shaun-rufus/)
 - **GitHub**: [github.com/shaunrufus](https://github.com/shaunrufus)
 - **Location**: Hyderabad, Telangana, India

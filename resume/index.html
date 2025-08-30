@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,20 +32,20 @@
         .header {
             text-align: center;
             margin-bottom: 20px;
-            border-bottom: 2px solid #1e3a8a;
+            border-bottom: 2px solid #000;
             padding-bottom: 15px;
         }
 
         .name {
             font-size: 24pt;
             font-weight: bold;
-            color: #1e3a8a;
+            color: #000;
             margin-bottom: 5px;
         }
 
         .title {
             font-size: 12pt;
-            color: #666;
+            color: #333;
             margin-bottom: 10px;
         }
 
@@ -61,8 +61,9 @@
         }
 
         .contact-item a {
-            color: #1e3a8a;
+            color: #000;
             text-decoration: none;
+            font-weight: 500;
         }
 
         /* Section Styles */
@@ -73,9 +74,9 @@
         .section-title {
             font-size: 12pt;
             font-weight: bold;
-            color: #1e3a8a;
+            color: #000;
             text-transform: uppercase;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #000;
             padding-bottom: 3px;
             margin-bottom: 10px;
         }
@@ -101,7 +102,7 @@
         .skill-label {
             font-weight: bold;
             min-width: 140px;
-            color: #1e3a8a;
+            color: #000;
         }
 
         .skill-list {
@@ -122,7 +123,7 @@
 
         .job-title {
             font-weight: bold;
-            color: #1e3a8a;
+            color: #000;
         }
 
         .job-duration {
@@ -143,7 +144,7 @@
 
         .achievements li:before {
             content: '•';
-            color: #1e3a8a;
+            color: #000;
             position: absolute;
             left: 0;
         }
@@ -155,7 +156,7 @@
 
         .degree {
             font-weight: bold;
-            color: #1e3a8a;
+            color: #000;
         }
 
         .institution {
@@ -188,9 +189,10 @@
         }
 
         .achievement-item:before {
-            content: '⭐';
+            content: '•';
             position: absolute;
             left: 0;
+            color: #000;
         }
 
         /* Print Styles */
@@ -233,7 +235,7 @@
         /* Highlight important metrics */
         .metric {
             font-weight: bold;
-            color: #1e3a8a;
+            color: #000;
         }
 
         /* Portfolio Links Styling */
@@ -246,22 +248,22 @@
         }
 
         .portfolio-link {
-            color: #1e3a8a;
+            color: #000;
             text-decoration: none;
             font-size: 10pt;
             padding: 2px 8px;
-            border: 1px solid #1e3a8a;
+            border: 1px solid #000;
             border-radius: 4px;
             transition: all 0.3s ease;
         }
 
         .portfolio-link:hover {
-            background-color: #1e3a8a;
+            background-color: #000;
             color: white;
             transform: scale(1.05);
         }
 
-        /* Hover Zoom Effect for Paragraphs */
+        /* Enhanced Hover Zoom Effect for Paragraphs */
         .section p, .summary, .achievements li, .education-item p, .cert-item, .achievement-item {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             padding: 2px 4px;
@@ -269,14 +271,14 @@
         }
 
         .section p:hover, .summary:hover, .achievements li:hover, .education-item p:hover, .cert-item:hover, .achievement-item:hover {
-            transform: scale(1.02);
-            box-shadow: 0 2px 8px rgba(30, 58, 138, 0.1);
-            background-color: rgba(30, 58, 138, 0.05);
+            transform: scale(1.05);
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+            background-color: rgba(0, 0, 0, 0.03);
         }
 
         /* Special hover effect for contact items */
         .contact-item:hover {
-            transform: scale(1.02);
+            transform: scale(1.03);
             transition: transform 0.3s ease;
         }
     </style>
@@ -288,17 +290,17 @@
             <h1 class="name">Shaun Rufus Kalurie</h1>
             <p class="title">Machine Learning Engineer | Fresh Graduate</p>
             <div class="contact-grid">
-                <div class="contact-item">📧 <a href="mailto:shaunrufus1412@gmail.com">shaunrufus1412@gmail.com</a></div>
-                <div class="contact-item">📱 +91 8008847365</div>
-                <div class="contact-item">🔗 LinkedIn: <a href="https://www.linkedin.com/in/shaun-rufus/" target="_blank">shaun-rufus</a></div>
-                <div class="contact-item">💻 GitHub: <a href="https://github.com/shaunrufus" target="_blank">shaunrufus</a></div>
-                <div class="contact-item">🌐 Portfolio: 
+                <div class="contact-item">Email: <a href="mailto:shaunrufus1412@gmail.com">shaunrufus1412@gmail.com</a></div>
+                <div class="contact-item">Phone: +91 8008847365</div>
+                <div class="contact-item">LinkedIn: <a href="https://www.linkedin.com/in/shaun-rufus/" target="_blank">shaun-rufus</a></div>
+                <div class="contact-item">GitHub: <a href="https://github.com/shaunrufus" target="_blank">shaunrufus</a></div>
+                <div class="contact-item">Portfolio: 
                     <div class="portfolio-links">
                         <a href="https://shaunrufus.github.io/shaunkalurie-portfolio/conservative/" class="portfolio-link" target="_blank">Conservative</a>
                         <a href="https://shaunrufus.github.io/shaunkalurie-portfolio/interactive/" class="portfolio-link" target="_blank">Interactive</a>
                     </div>
                 </div>
-                <div class="contact-item">📍 Hyderabad, Telangana, India</div>
+                <div class="contact-item">Location: Hyderabad, Telangana, India</div>
             </div>
         </header>
 
