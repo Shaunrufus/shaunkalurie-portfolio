@@ -420,46 +420,46 @@
             <div class="certifications">
                 <h3 class="certifications-title">Professional Certifications</h3>
                 <div class="certifications-grid">
-                    <div class="cert-item">
-                        <i class="fab fa-python"></i>
+                    <div class="cert-item" onclick="openCertModal('python-datascience', 'Python for Data Science and AI', 'IBM Certified')">
+                        <img src="../images/python for datascience,AI.png" alt="Python for Data Science and AI" class="cert-thumbnail">
                         <div>
                             <h4>Python for Data Science and AI</h4>
                             <p>IBM Certified</p>
                         </div>
                     </div>
-                    <div class="cert-item">
-                        <i class="fab fa-google"></i>
+                    <div class="cert-item" onclick="openCertModal('foundations-datascience', 'Foundations of Data Science', 'Google Certified')">
+                        <img src="../images/foundations of data sicence.png" alt="Foundations of Data Science" class="cert-thumbnail">
                         <div>
                             <h4>Foundations of Data Science</h4>
                             <p>Google Certified</p>
                         </div>
                     </div>
-                    <div class="cert-item">
-                        <i class="fas fa-brain"></i>
+                    <div class="cert-item" onclick="openCertModal('genai-llm', 'Generative AI using LLMs', 'DeepLearning.AI')">
+                        <img src="../images/GenAI &LLM.png" alt="Generative AI using LLMs" class="cert-thumbnail">
                         <div>
                             <h4>Generative AI using LLMs</h4>
                             <p>DeepLearning.AI</p>
                         </div>
                     </div>
-                    <div class="cert-item">
-                        <i class="fas fa-robot"></i>
+                    <div class="cert-item" onclick="openCertModal('datascience-toolbox', 'Data Science Toolbox', 'DeepLearning.AI')">
+                        <img src="../images/datascience toolbox.png" alt="Data Science Toolbox" class="cert-thumbnail">
                         <div>
-                            <h4>Fine Tuning Large Language Models</h4>
+                            <h4>Data Science Toolbox</h4>
                             <p>DeepLearning.AI</p>
                         </div>
                     </div>
-                    <div class="cert-item">
-                        <i class="fab fa-aws"></i>
+                    <div class="cert-item" onclick="openCertModal('business-analyst', 'Business Analyst Professional', 'Udemy Certified')">
+                        <img src="../images/business analyst professional certificate.jpg" alt="Business Analyst Professional" class="cert-thumbnail">
                         <div>
-                            <h4>Cloud Technical Essentials</h4>
-                            <p>AWS Certified</p>
+                            <h4>Business Analyst Professional</h4>
+                            <p>Udemy Certified</p>
                         </div>
                     </div>
-                    <div class="cert-item">
-                        <i class="fas fa-chart-line"></i>
+                    <div class="cert-item" onclick="openCertModal('ibm-python-project', 'IBM Python Project for Data Science', 'IBM Certified')">
+                        <img src="../images/IBM python project for datascience.png" alt="IBM Python Project for Data Science" class="cert-thumbnail">
                         <div>
-                            <h4>Business Analysis</h4>
-                            <p>Udemy Certified</p>
+                            <h4>IBM Python Project for Data Science</h4>
+                            <p>IBM Certified</p>
                         </div>
                     </div>
                 </div>
@@ -531,6 +531,20 @@
             <p>&copy; 2025 Shaun Rufus Kalurie. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Certification Modal -->
+    <div id="certModal" class="cert-modal">
+        <div class="cert-modal-content">
+            <div class="cert-modal-header">
+                <button class="cert-modal-close" onclick="closeCertModal()">&times;</button>
+                <h3 id="certModalTitle"></h3>
+                <p id="certModalSubtitle"></p>
+            </div>
+            <div class="cert-modal-body">
+                <img id="certModalImage" src="" alt="Certificate" class="cert-modal-image">
+            </div>
+        </div>
+    </div>
 
     <script src="app.js"></script>
 </body>
