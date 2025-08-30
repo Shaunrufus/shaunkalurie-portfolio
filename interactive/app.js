@@ -83,7 +83,12 @@ function animateSkills() {
     skillBars.forEach(bar => {
         const targetWidth = bar.getAttribute('data-width') || bar.getAttribute('data-progress');
         if (targetWidth) {
-            bar.style.width = targetWidth + '%';
+            // Reset width to 0 first, then animate to target
+            bar.style.width = '0%';
+            setTimeout(() => {
+                bar.style.width = targetWidth + '%';
+                bar.style.transition = 'width 1.5s ease-in-out';
+            }, 100);
         }
     });
 }
@@ -94,7 +99,7 @@ if (skillsSection) {
     const skillsObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                animateSkills();
+                setTimeout(animateSkills, 500);
                 skillsObserver.unobserve(entry.target);
             }
         });
@@ -152,8 +157,8 @@ document.addEventListener('DOMContentLoaded', function() {
         typeWriter(heroTitle, originalText, 80);
     }
     
-    // Initialize skill bars on page load
-    setTimeout(animateSkills, 1000);
+    // Initialize skill bars on page load with delay
+    setTimeout(animateSkills, 2000);
 });
 
 // Parallax effect for hero section
