@@ -126,9 +126,9 @@ All files are fully editable. Key areas to customize:
    - Save settings
 
 4. **Access Your Sites**
-   - Conservative: `https://yourusername.github.io/shaunkalurie-portfolio/conservative/`
-   - Interactive: `https://yourusername.github.io/shaunkalurie-portfolio/interactive/`
-   - Resume: `https://yourusername.github.io/shaunkalurie-portfolio/resume/`
+   - Conservative: `https://Shaunrufus.github.io/shaunkalurie-portfolio/conservative/`
+   - Interactive: `https://Shaunrufus.github.io/shaunkalurie-portfolio/interactive/`
+   - Resume: `https://Shaunrufus.github.io/shaunkalurie-portfolio/resume/`
 
 ## ✏️ Editing Guidelines
 
