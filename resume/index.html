@@ -235,6 +235,50 @@
             font-weight: bold;
             color: #1e3a8a;
         }
+
+        /* Portfolio Links Styling */
+        .portfolio-links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 5px;
+        }
+
+        .portfolio-link {
+            color: #1e3a8a;
+            text-decoration: none;
+            font-size: 10pt;
+            padding: 2px 8px;
+            border: 1px solid #1e3a8a;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-link:hover {
+            background-color: #1e3a8a;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* Hover Zoom Effect for Paragraphs */
+        .section p, .summary, .achievements li, .education-item p, .cert-item, .achievement-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        .section p:hover, .summary:hover, .achievements li:hover, .education-item p:hover, .cert-item:hover, .achievement-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 2px 8px rgba(30, 58, 138, 0.1);
+            background-color: rgba(30, 58, 138, 0.05);
+        }
+
+        /* Special hover effect for contact items */
+        .contact-item:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease;
+        }
     </style>
 </head>
 <body>
@@ -248,7 +292,12 @@
                 <div class="contact-item">📱 +91 8008847365</div>
                 <div class="contact-item">🔗 LinkedIn: <a href="https://www.linkedin.com/in/shaun-rufus/" target="_blank">shaun-rufus</a></div>
                 <div class="contact-item">💻 GitHub: <a href="https://github.com/shaunrufus" target="_blank">shaunrufus</a></div>
-                <div class="contact-item">🌐 Portfolio: <a href="PORTFOLIO_LINK_HERE" target="_blank">View Portfolio</a></div>
+                <div class="contact-item">🌐 Portfolio: 
+                    <div class="portfolio-links">
+                        <a href="https://shaunrufus.github.io/shaunkalurie-portfolio/conservative/" class="portfolio-link" target="_blank">Conservative</a>
+                        <a href="https://shaunrufus.github.io/shaunkalurie-portfolio/interactive/" class="portfolio-link" target="_blank">Interactive</a>
+                    </div>
+                </div>
                 <div class="contact-item">📍 Hyderabad, Telangana, India</div>
             </div>
         </header>
