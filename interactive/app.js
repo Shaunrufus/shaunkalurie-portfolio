@@ -18,26 +18,32 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const mobileMenu = document.getElementById('mobile-menu');
 const navMenu = document.querySelector('.nav-menu');
 
-mobileMenu.addEventListener('click', () => {
-    mobileMenu.classList.toggle('active');
-    navMenu.classList.toggle('active');
-});
+if (mobileMenu && navMenu) {
+    mobileMenu.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+}
 
 // Close mobile menu when clicking on a link
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
-        mobileMenu.classList.remove('active');
-        navMenu.classList.remove('active');
+        if (mobileMenu && navMenu) {
+            mobileMenu.classList.remove('active');
+            navMenu.classList.remove('active');
+        }
     });
 });
 
 // Navbar background change on scroll
 window.addEventListener('scroll', () => {
     const navbar = document.getElementById('navbar');
-    if (window.scrollY > 100) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
+    if (navbar) {
+        if (window.scrollY > 100) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
     }
 });
 
@@ -71,12 +77,14 @@ document.querySelectorAll('.project-card').forEach(card => {
     });
 });
 
-// Skill progress animation
+// Skill progress animation - Fixed for data-width attributes
 function animateSkills() {
     const skillBars = document.querySelectorAll('.skill-progress');
     skillBars.forEach(bar => {
-        const targetWidth = bar.getAttribute('data-progress');
-        bar.style.width = targetWidth + '%';
+        const targetWidth = bar.getAttribute('data-width') || bar.getAttribute('data-progress');
+        if (targetWidth) {
+            bar.style.width = targetWidth + '%';
+        }
     });
 }
 
@@ -143,6 +151,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const originalText = heroTitle.textContent;
         typeWriter(heroTitle, originalText, 80);
     }
+    
+    // Initialize skill bars on page load
+    setTimeout(animateSkills, 1000);
 });
 
 // Parallax effect for hero section

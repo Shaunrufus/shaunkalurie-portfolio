@@ -1,0 +1,7 @@
+[33m874d21d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Restore original conservative portfolio colors and add Streamlit project links to both portfolios
+[33m108ae8f[m Add certification images and modal functionality to both portfolios
+[33mbd7b353[m Update conservative portfolio with professional navy blue color scheme
+[33m680911c[m Update resume with professional styling: black headings, no icons, enhanced hover effects
+[33m8e05ebb[m Update resume with portfolio links and hover effects
+[33m39d8593[m Update README.md
+[33m2a3b44c[m Initial commit: Add portfolio structure with interactive, conservative, and resume folders
