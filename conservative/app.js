@@ -3,6 +3,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     initializeSmoothScrolling();
     initializeMobileNavigation();
+    initializeSkillBars();
 });
 
 // Smooth scrolling for navigation links
@@ -94,6 +95,30 @@ document.addEventListener('keydown', function(event) {
         closeCertModal();
     }
 });
+
+// Skill bars animation
+function initializeSkillBars() {
+    const skillBars = document.querySelectorAll('.skill-progress');
+    
+    const skillObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const skillBar = entry.target;
+                const progress = skillBar.getAttribute('data-progress');
+                
+                setTimeout(() => {
+                    skillBar.style.width = progress + '%';
+                }, 300);
+                
+                skillObserver.unobserve(skillBar);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    skillBars.forEach(bar => {
+        skillObserver.observe(bar);
+    });
+}
 
 // Simple console message
 console.log('🎯 Conservative Portfolio loaded successfully!');

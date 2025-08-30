@@ -402,6 +402,14 @@ body {
     transition: width 1s ease;
 }
 
+/* Show skill progress bars with actual percentages */
+.skill-progress[data-progress="95"] { width: 95%; }
+.skill-progress[data-progress="90"] { width: 90%; }
+.skill-progress[data-progress="85"] { width: 85%; }
+.skill-progress[data-progress="80"] { width: 80%; }
+.skill-progress[data-progress="75"] { width: 75%; }
+.skill-progress[data-progress="70"] { width: 70%; }
+
 /* Experience Section */
 .experience {
     padding: 80px 0;
